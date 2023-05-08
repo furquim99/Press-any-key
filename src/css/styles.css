@@ -1,0 +1,64 @@
+.caixa{
+    padding: 15px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);;
+}
+
+.texto{
+    font-size: 30px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.caixa.active .text{
+    display: none;
+}
+.texto, .codigo, .name{
+    font-size: 30px;
+    color: #14bc14;
+    font-weight: 500;
+}
+
+.container, .codigo, .nomes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: none;
+    flex-direction: column;
+}
+
+.caixa.active .container{
+    display: flex;
+}
+
+.container .codigo{
+    height: 110px;
+    width: 110px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    pointer-events: none;
+    border: 5px solid #14bc14;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container .nomes{
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+
+.nomes p{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nomes p:last-child{
+    border-left: 1px solid #bfbfbf;
+}
